@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        * {
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            position: sticky;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(159, 161, 161);
+            background-size: cover;
+            height: 65px;
+            width: 100vw;
+            position: sticky;
+        }
+
+        nav #nav-btn li {
+            display: flex;
+            float: left;
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        #nav-btn {
+            margin-top: 8px;
+            margin-left: 115vh;
+            cursor: pointer;
+        }
+
+        #img-logo {
+            margin-top: 5px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        #nav-btn ul {
+            display: flex;
+            margin: 25px;
+            margin-top: 8px;
+        }
+
+        #li-logo {
+            margin-left: 35px;
+            margin-top: 10px;
+
+        }
+
+        #shop-btn {
+            display: flex;
+            float: left;
+            height: 30px;
+            width: 30px;
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+        .container-1 {
+            display: flex;
+            float: left;
+        }
+
+        .container-1 {
+            display: flex;
+            height: 30vw;
+            width: 208vh;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .box {
+            margin-top: 90px;
+            margin-left: 50px;
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        #button {
+            border: 1px solid goldenrod;
+            background-color: goldenrod;
+            width: 130px;
+            border-radius: 30px;
+            margin-left: 120px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        #black-text {
+            display: flex;
+            font-size: 50px;
+
+
+        }
+
+        #green-text {
+            font-size: 50px;
+            color: rgb(16, 165, 24);
+        }
+
+        #para1 {
+            margin-top: 0px;
+        }
+
+        #beauty-girl {
+
+            overflow: visible;
+            width: 70vw;
+        }
+
+        .box-2 {
+            display: flex;
+            margin-left: 20vw;
+        }
+
+        .container-2 {
+            display: flex;
+            float: left;
+
+        }
+
+        .box-0 {
+            border: 1px solid black;
+            height: 200px;
+            width: 170px;
+            margin-left: 70px;
+            margin-top: 30px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        #card-1 {
+            height: 150px;
+            width: 160px
+        }
+
+        #btn-box-logo1 {
+            background-color: rgb(227, 160, 209);
+            border-radius: 30px;
+            border: 0.5px solid rgb(237, 194, 253);
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #btn-box-logo2 {
+            background-color: rgb(1, 157, 241);
+            border-radius: 30px;
+            border: 0.5px solid rgb(131, 186, 248);
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #btn-box-logo3 {
+            background-color: rgb(131, 243, 123);
+            border-radius: 30px;
+            border: 0.5px solid rgb(182, 255, 188);
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #btn-box-logo4 {
+            background-color: rgb(105, 107, 215);
+            border-radius: 30px;
+            border: 0.5px solid rgb(22, 179, 210);
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #btn-box-logo5 {
+            background-color: rgb(253, 255, 201);
+            border-radius: 30px;
+            border: 0.5px solid rgb(243, 255, 181);
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #btn-box-logo6 {
+            background-color: rgb(69, 172, 69);
+            border-radius: 30px;
+            border: 0.5px solid greenyellow;
+            padding: 3px;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .container-3 {
+            margin-top: 10px;
+        }
+
+        .box-01 {
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .box-02 {
+            display: flex;
+
+        }
+
+        .box-001 {
+            border: 1px solid rgb(233, 233, 233);
+            border-radius: 10px;
+            height: 299px;
+            width: 220px;
+            margin-left: 125px;
+            transition: 0.6s;
+        }
+
+        .box-001:hover {
+            transform: scale(1.1);
+            transition: 0.6s;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .img-teshirt {
+            border-radius: 20px;
+            width: 209px;
+            height: 180px;
+            padding: 6px;
+            cursor: pointer;
+
+        }
+
+        b {
+            color: green;
+        }
+
+        h5,
+        h4,
+        b {
+            margin-left: 6px;
+            cursor: pointer;
+        }
+
+        #money-bucket {
+            display: flex;
+            margin-top:20px;
+
+        }
+
+        #bucket {
+            height: 25px;
+            width: 30px;
+            margin-left: 140px;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        #bucket:hover{
+            transform: scale(1.3);
+            transition:0.6s;
+        }
+
+        .container-4 {
+            display: flex;
+            height: 35vw;
+            width: 208vh;
+            background-image: url(https://img.freepik.com/premium-photo/shopping-time-hd-8k-wallpaper-stock-photographic-image_890746-37806.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        #explore{
+            transition: 0.6s;
+            border-radius:10px;
+            border-style: none;
+             
+        }
+        #explore:hover{
+            transition: 0.6s;
+            transform: scale(1.3);
+            box-shadow: 0px 0px 10px rgb(207, 182, 106);
+        }
+
+        .box-03 {
+            display: flex;
+            align-items: center;
+            margin-left: 24%;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+
+        #upto-off {
+            font-size: 40px;
+        }
+        .container-5 .box-04{
+            display:flex;
+            float:left;
+            margin-left:10px;
+            cursor: pointer;
+        }
+        .box-004{
+            
+            border:1px solid rgb(198, 198, 198);
+            height:300px;
+            width:700px;
+            background-image:url(https://t3.ftcdn.net/jpg/03/30/49/64/360_F_330496414_XJv7ErFtuSHx7qVBqbKRga2aYU472tLP.jpg);
+            margin-left:34px;
+            color:white;
+            
+        }
+        #creazy-deals{
+            margin-top:35px;
+            margin-left:10px;
+            font-size: x-large;
+        }
+        #by1get1{
+            margin-top:15px;
+            margin-left:10px;
+            font-size:xx-large;
+
+        }
+        #coro{
+            margin-top:15px;
+            margin-left:10px;
+            font-size:larger;
+        }
+        #learn-more{
+            margin-top:15px;
+            margin-left:10px;
+            padding:4px;
+            width:150px;
+            background-color: rgb(222, 112, 201);
+        }
+        #learn-more-1{
+            margin-top:15px;
+            margin-left:10px;
+            padding:4px;
+            width:150px;
+            background-color: rgb(51, 224, 221);
+        }
+        
+        .box-005{
+            border:1px solid rgb(198, 198, 198);
+            height:300px;
+            width:700px;
+            background-image: url(https://img.freepik.com/free-photo/shocked-woman-covering-her-mouth-while-holding-many-shopping-bags-with-copy-space_23-2148673306.jpg);
+            margin-left:34px;
+            color:white;
+        }
+        .box-05{
+            display:flex;
+            float:left;
+        }
+        .box-006 ,.box-007 ,.box-008{
+            border:1px solid rgb(193, 193, 193);
+            height:250px;
+            width:450px;
+            margin-top:25px;
+            margin-left:43px;
+        }
+        .box-006{
+            background-image: url(img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box-007{
+            background-image: url(img3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box-008{
+            background-image: url(img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #sell-1{
+            margin-top:30px;
+            margin-left:30px;
+            color:rgb(73, 73, 73);
+        }
+        #sell-2{
+            margin-top:20px;
+            margin-left:30px;
+            color:rgb(25, 143, 141);
+        }
+        .container-7{
+            display:flex;
+            float:left;
+            margin-top:30px;
+            border:1px solid rgb(198, 198, 198);
+            width:208vh;
+            height:15vh;
+            background-color: rgb(2, 2, 57);
+            cursor: pointer;
+        }
+        .class-box{
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            margin-top:25px;
+            margin-left:125px;
+        }
+        .class-signup{
+            
+            margin-top:40px;
+            margin-left:34vw;
+        }
+        input{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            height:30px;
+            width:290px;
+            border-style: none;
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        #class-1{
+            color:white;
+        }
+        #sign-text{
+            border-style: none;
+            height:32px;
+            margin-left:-3px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(19, 128, 19);
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        #class-12{
+            margin-top:5px;
+        }
+        span{
+            color:orange
+        }
+        .container-8{
+            display:flex;
+            border:1px solid rgb(205, 205, 205);
+            width:208vh;
+            height:230px;
+            background-color: rgb(248, 246, 246);
+            font-family: "Noto Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            cursor: pointer;
+
+        }
+        #tech-logo{
+            display:flex;
+            margin-top:28px;
+            margin-left:150px;
+        }
+        .tech-2{
+            
+            margin-top:60px;
+            margin-left:170px;
+        }
+        #h6-12{
+            color:black;
+            font-size:medium;
+        }
+        #h6-123{
+            font-size:medium;
+            color:rgb(66, 66, 66);
+
+        }
+        #visa{
+            height:30px;
+            width:50px;
+        }
+        #apple{
+            width:90px;
+            height:50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contaier">
+                <img src="emc logo.jpg" alt="" id="img-logo">
+            </div>
+            <div id="nav-btn">
+                <ul>
+                    <li id="li-logo">Home</li>
+                    <li id="li-logo">Shop</li>
+                    <li id="li-logo">Blog</li>
+                    <li id="li-logo">About</li>
+                    <li id="li-logo">Contect Us</li>
+                    <a href=""><img src="shop-beg.png" alt="" id="shop-btn"></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-1">
+        <div class="box">
+            <h3 style="color: white;">Trade-In-Offer</h3>
+            <h1 id="black-text">Super value deals</h1>
+            <h1 id="green-text">On all products</h1>
+            <p id="para1">Save more copuns & upto 70% of!!</p>
+            <button id="button"><a href="" target="_blank"></a>Shop now</button>
+        </div>
+        <div class="box-2">
+            <img src="shyam-shoping.png" alt="" class="img-2">
+        </div>
+    </div>
+    <main>
+        <div class="container-2">
+            <div class="box-0">
+                <img src="truck.jpg" alt="" id="card-1">
+                <center><button id="btn-box-logo1">Free Shipping</button></center>
+            </div>
+            <div class="box-0">
+                <img src="order-online.jpg" alt="" id="card-1">
+                <center> <button id="btn-box-logo2">Online order</button></center>
+            </div>
+            <div class="box-0">
+                <img src="wealth.jpg" alt="" id="card-1">
+                <center><button id="btn-box-logo3">Save money</button></center>
+            </div>
+            <div class="box-0">
+                <img src="speacker.jpg" alt="" id="card-1">
+                <center><button id="btn-box-logo4">Prmotions</button></center>
+            </div>
+            <div class="box-0">
+                <img src="shop.jpg" alt="" id="card-1">
+                <center><button id="btn-box-logo5">Happy sales</button></center>
+            </div>
+            <div class="box-0">
+                <img src="services.jpg" alt="" id="card-1">
+                <center><button id="btn-box-logo6">24/7 support</button></center>
+            </div>
+        </div>
+    </main>
+
+    <main>
+        <div class="container-3">
+            <div class="box-01">
+                <center>
+                    <h1>Featurded Products</h1>
+                    <p>Summer collaction new morden design</p>
+                </center>
+                <br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img1.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img2.jpg"" class=" img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img3.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img4.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img5.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img6.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img7.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img8.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img4.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img3.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img1.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img5.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <main>
+        <div class="container-4">
+            <div class="box-03">
+                <center>
+                    <h3>Repair Services</h3>
+                    <br><br>
+                    <h1 id="upto-off">Upto 70% off - All T-shirts & Accessories</h1>
+                    <br><br>
+                    <button id="explore">Explore Now</button>
+                </center>
+
+            </div>
+
+        </div>
+    </main>
+    <br><br><br>
+    <main>
+        <div class="container-3">
+            <div class="box-01">
+                <center>
+                    <h1>New Arrivals</h1>
+                    <p>Summer collaction new morden design</p>
+                </center>
+                <br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img1.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img2.jpg"" class=" img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img3.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img4.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img5.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img6.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img7.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img8.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="box-02">
+                    <div class="box-001">
+                        <img src="img4.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img3.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img1.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                    <div class="box-001">
+                        <img src="img5.jpg" alt="" class="img-teshirt">
+                        <h5>addidas</h5>
+                        <h4>Cartoon astrunaut t-shirt</h4>
+                        <div id="money-bucket">
+                            <b>$50</b>
+                            <img src="shopping-trolly.jpg" alt="" id="bucket">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <main>
+        <div class="container-5">
+            <div class="box-04">
+                <div class="box-004">
+                    <h4 id="creazy-deals">creazy deals</h4>
+                    <h1 id="by1get1">buy 1 get 1 free</h1>
+                    <p id="coro">the best classics dressed is on sell at coro</p>
+                    <button id="learn-more">Learn More</button>
+                   
+                </div>
+                <div class="box-005">
+                    <h4 id="creazy-deals">spring/summer</h4>
+                    <h1 id="by1get1">Upcoming Season</h1>
+                    <p id="coro">the best classics dressed is on sell at coro</p>
+                    <button id="learn-more-1">Collaction</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-05">
+                <div class="box-006">
+                    <h1 id="sell-1">Seasonal Sell</h1>
+                    <p id="sell-2">Winter collaction sell off</p>
+                </div>
+                <div class="box-007">
+                    <h1 id="sell-1">New footwear collaction</h1>
+                    <p id="sell-2">Spring/summer 2024</p>
+                </div>
+                <div class="box-008">
+                    <h1 id="sell-1">T-shirts</h1>
+                    <p id="sell-2">New trendly pants</p>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+    <main>
+        <div class="container-7">
+            <div class="class-box">
+                <h1 id="class-1">
+                    Sign up for Newsletters
+                </h1>
+                <p id="class-12">get e-mail updates about our latest shop and <span>special offers</span> </p>
+            </div>
+            <div class="class-signup">
+                <input type="text" placeholder="Enter your email">
+                <button id="sign-text">Sign Up</button>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="container-8">
+            <div class="techf-1">
+                <img src="tech@friens-logo.jpg" alt="" id="tech-logo">
+            </div>
+            <div class="tech-2">
+                <h6 id="h6-12">About</h6>
+                <h6 id="h6-123">About</h6>
+                <h6 id="h6-123">Delivary information</h6>
+                <h6 id="h6-123">Privacy policy</h6>
+                <h6 id="h6-123">Trems & Conditions</h6>
+                <h6 id="h6-123">Contact Us</h6>
+            </div>
+            <div class="tech-2">
+                <h6 id="h6-12">My account</h6>
+                <h6 id="h6-123">Sign in</h6>
+                <h6 id="h6-123">View Cart</h6>
+                <h6 id="h6-123">My wishlist</h6>
+                <h6 id="h6-123">Track my order</h6>
+                <h6 id="h6-123">Help</h6>
+            </div>
+            <div class="tech-2">
+                <h6 id="h6-12">Install App</h6>
+                <h6 id="h6-123">From App store or Play store</h6>
+                <Div class="apple-play">
+                    <img src="apple-logo.png" alt="" id="apple">
+                    <img src="play-logo.png" alt="" id="apple">
+                </Div>
+                <h6 id="h6-123">Secured payment gatewavs</h6>
+                <div class="payment-method">
+                    <img src="VISA-logo.png" alt="" id="visa">
+                    <img src="mastercard.jpg" alt="" id="visa">
+                    <img src="mastro.png" alt="" id="visa">
+                    <img src="rupay.jpg" alt="" id="visa">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+
+</html>
